@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slider::-webkit-slider-thumb {
+  @apply appearance-none;
+  @apply w-7;
+  @apply h-7;
+  @apply rounded-full;
+  @apply bg-black;
+  @apply cursor-pointer;
+}
+
+.slider::-moz-range-thumb {
+  @apply w-7;
+  @apply h-7;
+  @apply rounded-full;
+  @apply bg-black;
+  @apply cursor-pointer;
+}
