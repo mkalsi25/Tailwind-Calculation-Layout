@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <title>Calculation</title>
+  </head>
+  <body class="flex justify-center">
+    <div>
+      <div class="w-full sm:w-96">
+          <div class="bg-gray-300 bg-opacity-25 py-4">
+              <div class="grid items-center w-11/12 mx-auto">
+                <div class="col-start-1 row-start-1 relative z-0">
+                <input type="text" class="w-full h-12 border-2 border-black bg-transparent rounded-xl pl-20 bg-white" />
+                </div>
+                <div class="col-start-1 row-start-1 relative z-10">
+                    <div class="flex items-center justify-between">
+                        <div class="bg-gray-400 bg-opacity-25 text-black h-11 rounded-l-xl flex items-center px-4">
+                            <h3 class="font-semibold">MLS#</h3>
+                        </div>
+                        <button class="w-10 h-10 ml-auto bg-black rounded-lg mr-1 outline-none">
+                            <svg class="text-white stroke-current h-6 w-6 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+              </div>
+              <div class="w-11/12 mx-auto text-xl my-3 py-1 border border-red-500 rounded-xl bg-red-100 text-red-500">
+                <p class="p-2 text-xs font-medium">MLS number not found. Please check the number and give it another try.</p>
+              </div>
+              <div class="w-full h-px bg-gray-300">
+              </div>
+              <div class="w-11/12 mx-auto text-xl py-4 grid gap-2">
+                <h3 class="text-2xl font-serif leading-none">Your general home goal</h3>
+                <p class="text-xxs leading-none">(Dallas county, Bardwell)</p>
+                <strong class="text-2xl leading-none">$350,000</strong>
+            </div>
+          </div>
+         <div class=" bg-white ">
+              <div class="flex justify-center py-5">
+            <button class="w-12 outline-none focus:outline-none h-2 rounded bg-gray-300 bg-opacity-50 mx-auto"> </button>
+        </div>
+        <div class="border-2 border-black rounded-xl py-6 w-11/12 mx-auto">
+            
+          <div class="py-6">
+            <h3 class="text-center text-xl">Down Payment</h3>
+            <div class="py-4">
+              <div
+                class="px-4 h-12 flex items-center justify-center w-11/12 mx-auto border-2 rounded-lg"
+              >
+                <p class="text-center font-bold">11% = $38,500</p>
+              </div>
+            </div>
+            <div
+              class="px-4 h-12 border-2 border-dotted w-11/12 mx-auto rounded-lg flex justify-center items-center"
+            >
+              <div>
+                <h4 class="text-xs font-medium leading-none">
+                  Monthly Payment (est)
+                </h4>
+                <p class="text-center font-bold leading-none py-1">$1,314</p>
+              </div>
+            </div>
+            <div class="py-4 flex justify-between px-4">
+              <div class="flex space-x-1 items-end">
+                <div><span>←</span></div>
+                <div>
+                  <span
+                    class="text-xxs font-medium leading-none flex justify-start"
+                  >
+                    2%
+                  </span>
+                  <p class="text-center font-medium leading-none py-1 text-xxs">
+                    Lowest down payment
+                  </p>
+                </div>
+              </div>
+              <div class="flex space-x-1 items-end">
+                
+                <div>
+                  <span
+                    class="text-xxs font-medium leading-none flex justify-end"
+                  >
+                  20%
+                  </span>
+                  <p class="text-center font-medium leading-none py-1 text-xxs">
+                    Lowest monthly payment
+                  </p>
+                </div>
+                <div><span>→</span></div>
+              </div>
+              </div>
+              <div class="flex justify-center pt-4">
+                <input
+                  type="range"
+                  min="1"
+                  max="100"
+                  value="11"
+                  class="slider appearance-none h-2 bg-gray-100 outline-none rounded w-11/12"
+                  id="myRange"
+                />
+              </div>
+            </div>
+           
+          </div>
+         </div>
+        </div>
+        <div class="py-8 px-3 w-full sm:w-96">
+          <h3 class="text-center text-xl w-2/3 mx-auto">
+            Down Payment you'll need to buy this house
+          </h3>
+          <div class="py-4">
+            <div
+              class="px-4 h-12 flex items-center justify-center border-black border-2 rounded-lg"
+            >
+              <p class="text-center font-bold">$38,500</p>
+            </div>
+          </div>
+          <div class="space-y-2 text-xs font-semibold">
+            <div class="flex justify-between">
+              <h5>Mortage loan required</h5>
+              <p class="text-sm">$311,500</p>
+            </div>
+            <div class="flex justify-between">
+              <h5>Dwelling boost</h5>
+              <p class="text-sm">$20,825</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <h5>Money from dwelling included</h5>
+              <input
+                type="checkbox"
+                class="form-checkbox h-4 w-4 border-2 border-black rounded text-black outline-none focus:ring-0"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
