@@ -1,5 +1,5 @@
 module.exports = {
-  mode: "jit",
+  // mode: "jit",
   purge: { enabled: true, content: ["./src/**.html"] },
   darkMode: false, // or 'media' or 'class'
   theme: {
