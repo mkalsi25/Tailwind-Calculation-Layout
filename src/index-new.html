@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="./css/style.css" rel="stylesheet" />
+    <title>Calculation</title>
+  </head>
+  <body class="flex justify-center">
+    <div class="w-full sm:w-96 bg-gradient-to-b from-gray-100 to-transparent">
+      <div class="p-4 flex items-center">
+        <div class="grid items-center w-full">
+          <input
+            type="text"
+            class="
+              pl-10
+              py-3
+              rounded-xl
+              filter
+              drop-shadow-lg
+              border-none
+              bg-white
+              w-full
+              outline-none
+              focus:outline-none
+              col-start-1
+              row-start-1
+              relative
+              z-0
+            "
+            placeholder="Enter a texas #MLS"
+          />
+          <span class="col-start-1 row-start-1 relative z-10 w-10">
+            <svg
+              class="text-black stroke-current h-4 w-4 mx-auto"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="{2}"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </span>
+        </div>
+        <div>
+          <button class="w-10 h-8 bg-gray-200 rounded-r-xl">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mx-auto"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="p-4">
+        <div class="p-4 border-2 rounded-xl bg-gray-200 shadow">
+          <h1 class="text-2xl font-semibold">You've got early access.</h1>
+          <p class="text-sm py-2">
+            This tool is still a work in progress. We hope you find it usefull
+            and are excited to hear your thoughts on how we can improve it.
+          </p>
+        </div>
+      </div>
+      <div class="p-4">
+        <div>
+          <h2 class="text-xs font-bold">Your default</h2>
+          <h3 class="text-3xl font-semibold">$350,000</h3>
+          <p class="text-xs py-2">
+            The calculations below are based on the home price you in initially
+            told us you were interested in, near delax county, Bardwell.
+          </p>
+        </div>
+      </div>
+      <div class="p-4">
+        <div>
+          <h4 class="text-3xl font-serif text-center">Explore down payments</h4>
+          <p class="text-sm py-2">
+            20% down is not the only way to get into your home. In fact it's one
+            of the least common options. use the slider to explore different
+            option
+          </p>
+          <div
+            class="
+              my-2
+              p-2
+              border-2 border-black
+              rounded-xl
+              grid grid-cols-2
+              items-center
+            "
+          >
+            <div>
+              <h4 class="text-xl text-center font-bold">$38,500</h4>
+              <p class="text-sm text-center">Down Payment</p>
+            </div>
+            <div class="border rounded-xl p-2">
+              <h4 class="text-xl text-center font-bold">$1,314</h4>
+              <p class="text-sm text-center">Monthly Payments</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center pt-4">
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="11"
+          class="
+            slider
+            appearance-none
+            h-4
+            bg-gray-200
+            outline-none
+            rounded-xl
+            w-11/12
+          "
+          id="myRange"
+        />
+      </div>
+      <div class="py-4 flex justify-between px-4">
+        <div class="grid">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-3"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M7 11l5-5m0 0l5 5m-5-5v12"
+            />
+          </svg>
+          <div>
+            <span class="text-xxs font-medium leading-none flex justify-start">
+              2%
+            </span>
+            <p class="text-center font-medium leading-none py-1 text-xxs">
+              Lowest down payment
+            </p>
+          </div>
+        </div>
+        <div class="grid justify-items-end">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-3"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M7 11l5-5m0 0l5 5m-5-5v12"
+            />
+          </svg>
+          <div>
+            <span class="text-xxs font-medium leading-none flex justify-end">
+              20%
+            </span>
+            <p class="text-center font-medium leading-none py-1 text-xxs">
+              Lowest monthly payment
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="p-4">
+        <div>
+          <h4 class="text-3xl font-serif text-center">
+            Down payments needed to buy this home
+          </h4>
+          <p class="text-sm py-2">
+            Based on your current selection from above, here's how much youll
+            need to buy this house
+          </p>
+        </div>
+        <div class="p-4 border-2 border-black rounded-xl my-2">
+          <div class="py-4">
+            <div
+              class="
+                px-4
+                h-12
+                flex
+                items-center
+                justify-center
+                border-2
+                rounded-lg
+              "
+            >
+              <p class="text-center font-bold">$38,500</p>
+            </div>
+          </div>
+          <div class="space-y-2 text-xs font-semibold">
+            <div class="flex justify-between">
+              <h5>Found by Dwelling</h5>
+              <p class="text-sm">$311,500</p>
+            </div>
+            <div class="flex justify-between">
+              <h5>PMI required</h5>
+              <p class="text-sm">$20,825</p>
+            </div>
+            <div class="flex justify-between">
+              <h5>Include money from Dwelling</h5>
+              <p class="text-sm">$325</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <h5>Money from dwelling included</h5>
+              <input
+                type="checkbox"
+                class="
+                  form-checkbox
+                  h-4
+                  w-4
+                  border-2 border-black
+                  rounded
+                  text-black
+                  outline-none
+                  focus:ring-0
+                "
+              />
+            </div>
+            <div class="flex justify-between">
+              <h5>Include estimated closings costs</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
