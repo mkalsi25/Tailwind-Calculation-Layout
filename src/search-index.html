@@ -10,6 +10,72 @@
     />
     <link href="./css/style.css" rel="stylesheet" />
     <title>Calculation</title>
+
+    <style>
+      input[type="range"] {
+        -webkit-appearance: none;
+        margin: 20px 0;
+        width: 100%;
+      }
+      input[type="range"]:focus {
+        outline: none;
+      }
+      input[type="range"]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 8px;
+        cursor: pointer;
+        animate: 0.2s;
+        background: #c7c7c7;
+        border-radius: 25px;
+      }
+      input[type="range"]::-webkit-slider-thumb {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background: #000;
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -8px;
+      }
+      input[type="range"]:focus::-webkit-slider-runnable-track {
+        background: #c7c7c7;
+      }
+      .range-wrap {
+        width: 500px;
+        position: relative;
+      }
+      .range-value {
+        position: absolute;
+        top: -50%;
+      }
+      .range-value span {
+        width: 60px;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+        background: #000;
+        color: #fff;
+        font-size: 12px;
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        border-radius: 6px;
+      }
+      .range-value span:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 10px solid #000;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        margin-top: -1px;
+      }
+    </style>
   </head>
   <body class="flex justify-center">
     <div class="w-full sm:w-96 bg-gradient-to-b from-gray-100 to-transparent">
@@ -325,23 +391,18 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-center pt-4">
-        <input
-          type="range"
-          min="1"
-          max="100"
-          value="11"
-          class="
-            slider
-            appearance-none
-            h-4
-            bg-gray-200
-            outline-none
-            rounded-xl
-            w-11/12
-          "
-          id="myRange"
-        />
+      <div class="flex px-4 pt-4">
+        <div class="range-wrap">
+          <div class="range-value" id="rangeV"></div>
+          <input
+            id="range"
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            step="1"
+          />
+        </div>
       </div>
       <div class="py-4 flex justify-between px-4">
         <div class="grid">
@@ -455,7 +516,25 @@
         </div>
       </div>
     </div>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vquery/5.0.1/v.min.js"
+      integrity="sha512-JTaEfpc0EjojckV4ObScEHC2yHkDKUXEC5xO4Yb8upLDUR/2clSQKloqw6Ocp66a7dW689eKo0b/KC9C+T6osg=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const range = document.getElementById("range"),
+        rangeV = document.getElementById("rangeV"),
+        setValue = () => {
+          const newValue = Number(
+              ((range.value - range.min) * 100) / (range.max - range.min)
+            ),
+            newPosition = 10 - newValue * 0.2;
+          rangeV.innerHTML = `<span>${range.value}</span>`;
+          rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
+        };
+      document.addEventListener("DOMContentLoaded", setValue);
+      range.addEventListener("input", setValue);
+    </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper(".swiper-container", {
