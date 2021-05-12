@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link href="./css/style.css" rel="stylesheet" />
     <title>Calculation</title>
   </head>
@@ -46,6 +49,37 @@
               />
             </svg>
           </span>
+          <button
+            class="
+              col-start-1
+              row-start-1
+              relative
+              z-10
+              w-8
+              h-8
+              rounded-full
+              bg-black
+              ml-auto
+              mr-2
+              flex
+              items-center
+              justify-center
+            "
+          >
+            <svg
+              width="20"
+              height="13"
+              viewBox="0 0 20 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="text-white fill-current"
+            >
+              <path
+                d="M17.7705 1.69507V5.69507H4.60051L8.18051 2.10507L6.77051 0.695068L0.770508 6.69507L6.77051 12.6951L8.18051 11.2851L4.60051 7.69507H19.7705V1.69507H17.7705Z"
+                fill="fillCurrent"
+              />
+            </svg>
+          </button>
         </div>
         <div>
           <button class="w-10 h-8 bg-gray-200 rounded-r-xl">
@@ -64,42 +98,191 @@
           </button>
         </div>
       </div>
-      <div class="p-4 grid">
-        <span
+      <div class="swiper-container mySwiper p-4">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="grid">
+              <span
+                class="
+                  ml-auto
+                  flex
+                  items-center
+                  justify-center
+                  h-6
+                  bg-opacity-60
+                  w-16
+                  text-xs
+                  font-bold
+                  bg-gray-50
+                  col-start-1
+                  row-start-1
+                  relative
+                  z-10
+                  m-2
+                  rounded
+                "
+              >
+                Active
+              </span>
+              <img
+                src="https://via.placeholder.com/400"
+                class="
+                  h-56
+                  rounded-xl
+                  object-cover
+                  w-full
+                  col-start-1
+                  row-start-1
+                  relative
+                  z-0
+                "
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="grid">
+              <span
+                class="
+                  ml-auto
+                  flex
+                  items-center
+                  justify-center
+                  h-6
+                  bg-opacity-60
+                  w-16
+                  text-xs
+                  font-bold
+                  bg-gray-50
+                  col-start-1
+                  row-start-1
+                  relative
+                  z-10
+                  m-2
+                  rounded
+                "
+              >
+                Active
+              </span>
+              <img
+                src="https://via.placeholder.com/500"
+                class="
+                  h-56
+                  rounded-xl
+                  object-cover
+                  w-full
+                  col-start-1
+                  row-start-1
+                  relative
+                  z-0
+                "
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="grid">
+              <span
+                class="
+                  ml-auto
+                  flex
+                  items-center
+                  justify-center
+                  h-6
+                  bg-opacity-60
+                  w-16
+                  text-xs
+                  font-bold
+                  bg-gray-50
+                  col-start-1
+                  row-start-1
+                  relative
+                  z-10
+                  m-2
+                  rounded
+                "
+              >
+                Active
+              </span>
+              <img
+                src="https://via.placeholder.com/600"
+                class="
+                  h-56
+                  rounded-xl
+                  object-cover
+                  w-full
+                  col-start-1
+                  row-start-1
+                  relative
+                  z-0
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-between px-8 -mt-16 relative z-10">
+        <button
           class="
-            ml-auto
+            prev
+            w-10
+            h-10
             flex
-            items-center
             justify-center
-            h-6
-            bg-opacity-60
-            w-16
-            text-xs
-            font-bold
-            bg-gray-50
-            col-start-1
-            row-start-1
-            relative
-            z-10
-            m-2
-            rounded
+            items-center
+            rounded-full
+            bg-black bg-opacity-25
+            hover:bg-opacity-100
+            outline-none
+            focus:outline-none
           "
         >
-          Active
-        </span>
-        <img
-          src="https://via.placeholder.com/500"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-white stroke-current"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
+
+        <button
           class="
-            h-56
-            rounded-xl
-            object-cover
-            w-full
-            col-start-1
-            row-start-1
-            relative
-            z-0
+            next
+            w-10
+            h-10
+            flex
+            justify-center
+            items-center
+            rounded-full
+            bg-black bg-opacity-25
+            hover:bg-opacity-100
+            outline-none
+            focus:outline-none
           "
-        />
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-white stroke-current"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="p-4">
         <div class="py-3">
           <h3 class="text-3xl font-semibold">$350,000</h3>
           <p class="text-xs">MLS#647417 | Austan, TX</p>
@@ -272,5 +455,23 @@
         </div>
       </div>
     </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper-container", {
+        // Navigation arrows
+        loop: true,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".next",
+          prevEl: ".prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
   </body>
 </html>
