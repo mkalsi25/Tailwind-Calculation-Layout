@@ -7,6 +7,10 @@ module.exports = {
       fontSize: {
         xxs: "10px",
       },
+      colors: {
+        primary: "#24201B",
+        heading: "#BEA68E",
+      },
     },
   },
   variants: {
