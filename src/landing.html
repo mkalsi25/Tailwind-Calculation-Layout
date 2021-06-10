@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <title>Landing</title>
+    <style>
+      input[type="range"] {
+        -webkit-appearance: none;
+        margin: 20px 0;
+        width: 100%;
+      }
+      input[type="range"]:focus {
+        outline: none;
+      }
+      input[type="range"]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 18px;
+        cursor: pointer;
+        animate: 0.2s;
+        background: #e2d8d8;
+        border-radius: 25px;
+      }
+      input[type="range"]::-webkit-slider-thumb {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background: url("./ball.png");
+        background-position: center;
+        background-size: cover;
+        filter: drop-shadow(0 0 0.75rem white);
+
+        padding: 2px;
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -8px;
+      }
+      input[type="range"]:focus::-webkit-slider-runnable-track {
+        background: #c9c1c1;
+      }
+      .range-wrap {
+        width: 500px;
+        position: relative;
+      }
+      .range-value {
+        position: absolute;
+        top: -50%;
+      }
+      .range-value span {
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        background: #c9c1c1;
+        color: #000;
+        font-weight: 700;
+        font-size: 20px;
+
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        border-radius: 10px;
+      }
+      .range-value span:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 10px solid #c9c1c1;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        margin-top: -1px;
+      }
+    </style>
+  </head>
+  <body class="flex justify-center">
+    <div
+      class="w-full sm:w-96 py-16 bg-yellow-50 bg-opacity-50 overflow-hidden"
+    >
+      <div class="px-6">
+        <h1
+          class="font-serif text-2xl text-center font-semibold w-11/12 mx-auto"
+        >
+          We make buying a home
+          <span class="font-sans italic">Stupidly</span> simple.
+        </h1>
+      </div>
+      <div class="pt-8">
+        <div class="overflow-hidden box-border whitespace-nowrap px-12">
+          <div
+            class="
+              rounded-xl
+              overflow-hidden
+              border-2 border-black
+              max-w-sm
+              animate-marquee
+              hover:animate-none
+              mx-auto
+            "
+          >
+            <div class="property">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="grid">
+                    <span
+                      class="
+                        ml-auto
+                        flex
+                        items-center
+                        justify-center
+                        h-6
+                        bg-opacity-60
+                        w-16
+                        text-xs
+                        font-bold
+                        bg-gray-50
+                        col-start-1
+                        row-start-1
+                        relative
+                        z-10
+                        m-2
+                        rounded
+                      "
+                    >
+                      Active
+                    </span>
+                    <div class="col-start-1 row-start-1 relative z-0">
+                      <img
+                        src="https://dvvjkgh94f2v6.cloudfront.net/7b68097c/193509531/83dcefb7.jpeg"
+                        class="h-56 w-full object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="grid">
+                    <span
+                      class="
+                        ml-auto
+                        flex
+                        items-center
+                        justify-center
+                        h-6
+                        bg-opacity-60
+                        w-16
+                        text-xs
+                        font-bold
+                        bg-gray-50
+                        col-start-1
+                        row-start-1
+                        relative
+                        z-10
+                        m-2
+                        rounded
+                      "
+                    >
+                      Active
+                    </span>
+                    <div class="col-start-1 row-start-1 relative z-0">
+                      <img
+                        src="https://dvvjkgh94f2v6.cloudfront.net/7b68097c/193509531/83dcefb7.jpeg"
+                        class="h-56 w-full object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="grid">
+                    <span
+                      class="
+                        ml-auto
+                        flex
+                        items-center
+                        justify-center
+                        h-6
+                        bg-opacity-60
+                        w-16
+                        text-xs
+                        font-bold
+                        bg-gray-50
+                        col-start-1
+                        row-start-1
+                        relative
+                        z-10
+                        m-2
+                        rounded
+                      "
+                    >
+                      Active
+                    </span>
+                    <div class="col-start-1 row-start-1 relative z-0">
+                      <img
+                        src="https://dvvjkgh94f2v6.cloudfront.net/7b68097c/193509531/83dcefb7.jpeg"
+                        class="h-56 w-full object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-3 flex justify-between relative z-20 -mt-16">
+              <button
+                class="
+                  w-10
+                  h-10
+                  flex
+                  rounded-full
+                  bg-opacity-50
+                  justify-center
+                  bg-gray-50
+                  text-black text-sm
+                  items-center
+                  outline-none
+                  focus:outline-none
+                  prev
+                "
+              >
+                <
+              </button>
+              <button
+                class="
+                  w-10
+                  h-10
+                  flex
+                  outline-none
+                  bg-opacity-50
+                  focus:outline-none
+                  rounded-full
+                  justify-center
+                  bg-gray-50
+                  text-black text-sm
+                  items-center
+                  next
+                "
+              >
+                >
+              </button>
+            </div>
+            <div class="grid grid-cols-2">
+              <div class="p-3 border-l-0 border-2 border-black">
+                <h2 class="text-sm">Cash Needed to buy</h2>
+                <strong class="text-2xl">$0</strong>
+              </div>
+              <div class="p-3 border-r-0 border-2 border-black">
+                <h2 class="text-sm">Montage Payment</h2>
+                <strong class="text-2xl">$0</strong>
+              </div>
+            </div>
+            <div class="p-3 border-b-2 border-black">
+              <h3 class="text-base">$350,000 | Austin, TX</h3>
+              <p class="text-xs">Address</p>
+            </div>
+            <div class="grid grid-cols-3 justify-items-center p-3">
+              <div>3 Beds</div>
+              <div>3 Bath</div>
+              <div>3 Sleeps</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-8">
+        <h4 class="text-2xl text-center">
+          Let's start by finding some afoordable homes for you in texas
+        </h4>
+      </div>
+      <div class="pt-8 px-6">
+        <h5 class="text-3xl font-serif">What's your income?</h5>
+        <p class="text-xs">
+          Roughly, how much does your household make, before tax
+        </p>
+        <div class="border text-center p-2 rounded-xl text-sm font-bold mt-4">
+          $235,000
+        </div>
+        <input id="range" type="range" min="0" max="100" value="50" step="1" />
+      </div>
+      <div class="pt-8 px-6">
+        <h5 class="text-3xl font-serif">What's your credit?</h5>
+        <p class="text-xs">Your best guess is good enough, for now.</p>
+        <div class="border text-center p-2 rounded-xl text-sm font-bold mt-4">
+          $235,000
+        </div>
+        <input id="range" type="range" min="0" max="100" value="50" step="1" />
+      </div>
+      <div class="pt-8 px-6 flex">
+        <button
+          class="
+            rounded-xl
+            bg-black
+            text-white text-sm
+            p-3
+            w-full
+            font-bold
+            outline-none
+            focus:outline-none
+          "
+        >
+          Start browsing
+        </button>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".property", {
+        // Navigation arrows
+        loop: true,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".next",
+          prevEl: ".prev",
+        },
+      });
+    </script>
+  </body>
+</html>

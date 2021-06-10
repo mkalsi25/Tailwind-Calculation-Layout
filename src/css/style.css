@@ -31723,6 +31723,26 @@ select {
   }
 }
 
+@-webkit-keyframes marquee {
+  0% {
+    transform: translate(105%, 0);
+  }
+
+  100% {
+    transform: translate(-105%, 0);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(105%, 0);
+  }
+
+  100% {
+    transform: translate(-105%, 0);
+  }
+}
+
 .animate-none {
   -webkit-animation: none;
           animation: none;
@@ -31746,6 +31766,71 @@ select {
 .animate-bounce {
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
+}
+
+.animate-marquee {
+  -webkit-animation: marquee 10s linear infinite;
+          animation: marquee 10s linear infinite;
+}
+
+.hover\:animate-none:hover {
+  -webkit-animation: none;
+          animation: none;
+}
+
+.hover\:animate-spin:hover {
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+.hover\:animate-ping:hover {
+  -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+          animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.hover\:animate-pulse:hover {
+  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.hover\:animate-bounce:hover {
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
+}
+
+.hover\:animate-marquee:hover {
+  -webkit-animation: marquee 10s linear infinite;
+          animation: marquee 10s linear infinite;
+}
+
+.focus\:animate-none:focus {
+  -webkit-animation: none;
+          animation: none;
+}
+
+.focus\:animate-spin:focus {
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+.focus\:animate-ping:focus {
+  -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+          animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.focus\:animate-pulse:focus {
+  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.focus\:animate-bounce:focus {
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
+}
+
+.focus\:animate-marquee:focus {
+  -webkit-animation: marquee 10s linear infinite;
+          animation: marquee 10s linear infinite;
 }
 
 .mix-blend-normal {
@@ -63326,6 +63411,71 @@ select {
             animation: bounce 1s infinite;
   }
 
+  .sm\:animate-marquee {
+    -webkit-animation: marquee 10s linear infinite;
+            animation: marquee 10s linear infinite;
+  }
+
+  .sm\:hover\:animate-none:hover {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .sm\:hover\:animate-spin:hover {
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .sm\:hover\:animate-ping:hover {
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .sm\:hover\:animate-pulse:hover {
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .sm\:hover\:animate-bounce:hover {
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
+
+  .sm\:hover\:animate-marquee:hover {
+    -webkit-animation: marquee 10s linear infinite;
+            animation: marquee 10s linear infinite;
+  }
+
+  .sm\:focus\:animate-none:focus {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .sm\:focus\:animate-spin:focus {
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .sm\:focus\:animate-ping:focus {
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .sm\:focus\:animate-pulse:focus {
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .sm\:focus\:animate-bounce:focus {
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
+
+  .sm\:focus\:animate-marquee:focus {
+    -webkit-animation: marquee 10s linear infinite;
+            animation: marquee 10s linear infinite;
+  }
+
   .sm\:mix-blend-normal {
     mix-blend-mode: normal;
   }
@@ -94791,6 +94941,71 @@ select {
   .md\:animate-bounce {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .md\:animate-marquee {
+    -webkit-animation: marquee 10s linear infinite;
+            animation: marquee 10s linear infinite;
+  }
+
+  .md\:hover\:animate-none:hover {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .md\:hover\:animate-spin:hover {
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .md\:hover\:animate-ping:hover {
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .md\:hover\:animate-pulse:hover {
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .md\:hover\:animate-bounce:hover {
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
+
+  .md\:hover\:animate-marquee:hover {
+    -webkit-animation: marquee 10s linear infinite;
+            animation: marquee 10s linear infinite;
+  }
+
+  .md\:focus\:animate-none:focus {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .md\:focus\:animate-spin:focus {
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .md\:focus\:animate-ping:focus {
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .md\:focus\:animate-pulse:focus {
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .md\:focus\:animate-bounce:focus {
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
+
+  .md\:focus\:animate-marquee:focus {
+    -webkit-animation: marquee 10s linear infinite;
+            animation: marquee 10s linear infinite;
   }
 
   .md\:mix-blend-normal {
@@ -126260,6 +126475,71 @@ select {
             animation: bounce 1s infinite;
   }
 
+  .lg\:animate-marquee {
+    -webkit-animation: marquee 10s linear infinite;
+            animation: marquee 10s linear infinite;
+  }
+
+  .lg\:hover\:animate-none:hover {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .lg\:hover\:animate-spin:hover {
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .lg\:hover\:animate-ping:hover {
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .lg\:hover\:animate-pulse:hover {
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .lg\:hover\:animate-bounce:hover {
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
+
+  .lg\:hover\:animate-marquee:hover {
+    -webkit-animation: marquee 10s linear infinite;
+            animation: marquee 10s linear infinite;
+  }
+
+  .lg\:focus\:animate-none:focus {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .lg\:focus\:animate-spin:focus {
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .lg\:focus\:animate-ping:focus {
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .lg\:focus\:animate-pulse:focus {
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .lg\:focus\:animate-bounce:focus {
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
+
+  .lg\:focus\:animate-marquee:focus {
+    -webkit-animation: marquee 10s linear infinite;
+            animation: marquee 10s linear infinite;
+  }
+
   .lg\:mix-blend-normal {
     mix-blend-mode: normal;
   }
@@ -157727,6 +158007,71 @@ select {
             animation: bounce 1s infinite;
   }
 
+  .xl\:animate-marquee {
+    -webkit-animation: marquee 10s linear infinite;
+            animation: marquee 10s linear infinite;
+  }
+
+  .xl\:hover\:animate-none:hover {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .xl\:hover\:animate-spin:hover {
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .xl\:hover\:animate-ping:hover {
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .xl\:hover\:animate-pulse:hover {
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .xl\:hover\:animate-bounce:hover {
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
+
+  .xl\:hover\:animate-marquee:hover {
+    -webkit-animation: marquee 10s linear infinite;
+            animation: marquee 10s linear infinite;
+  }
+
+  .xl\:focus\:animate-none:focus {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .xl\:focus\:animate-spin:focus {
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .xl\:focus\:animate-ping:focus {
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .xl\:focus\:animate-pulse:focus {
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .xl\:focus\:animate-bounce:focus {
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
+
+  .xl\:focus\:animate-marquee:focus {
+    -webkit-animation: marquee 10s linear infinite;
+            animation: marquee 10s linear infinite;
+  }
+
   .xl\:mix-blend-normal {
     mix-blend-mode: normal;
   }
@@ -189192,6 +189537,71 @@ select {
   .\32xl\:animate-bounce {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .\32xl\:animate-marquee {
+    -webkit-animation: marquee 10s linear infinite;
+            animation: marquee 10s linear infinite;
+  }
+
+  .\32xl\:hover\:animate-none:hover {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .\32xl\:hover\:animate-spin:hover {
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .\32xl\:hover\:animate-ping:hover {
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .\32xl\:hover\:animate-pulse:hover {
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .\32xl\:hover\:animate-bounce:hover {
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
+
+  .\32xl\:hover\:animate-marquee:hover {
+    -webkit-animation: marquee 10s linear infinite;
+            animation: marquee 10s linear infinite;
+  }
+
+  .\32xl\:focus\:animate-none:focus {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .\32xl\:focus\:animate-spin:focus {
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .\32xl\:focus\:animate-ping:focus {
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .\32xl\:focus\:animate-pulse:focus {
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .\32xl\:focus\:animate-bounce:focus {
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
+
+  .\32xl\:focus\:animate-marquee:focus {
+    -webkit-animation: marquee 10s linear infinite;
+            animation: marquee 10s linear infinite;
   }
 
   .\32xl\:mix-blend-normal {
