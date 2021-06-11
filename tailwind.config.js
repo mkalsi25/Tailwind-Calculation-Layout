@@ -11,6 +11,12 @@ module.exports = {
         primary: "#24201B",
         heading: "#BEA68E",
       },
+      width: {
+        box: "345px",
+      },
+      height: {
+        box: "235px",
+      },
       animation: {
         marquee: "marquee 10s linear infinite",
       },
